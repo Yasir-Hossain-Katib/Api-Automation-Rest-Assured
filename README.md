@@ -1,62 +1,85 @@
 # Automated API Testing with Rest Assured
 ## Project Description
-This project demonstrates end-to-end API testing for the application hosted at Daily Finance. The testing includes core features such as user management and item management. The APIs were automated using Rest Assured, a popular library for API testing in Java.
 
-The automation covers both positive and negative test scenarios to ensure the reliability and robustness of the APIs. The process was divided into two phases:
+This repository demonstrates complete API testing and automation for the Daily Finance application. The scope includes essential features such as user management and item management. All APIs were automated using Rest Assured, a widely-used Java library for API testing.
 
-- Postman Collection: Creating and testing API requests for the required features.
-- Automation with Rest Assured: Automating the same requests and validating responses programmatically.
+The testing workflow was organized into two main phases:
+
+Postman Collection: Building and validating all required API requests.
+
+Rest Assured Automation: Converting those same requests into automated test scripts with assertions.
+
+Both positive and negative scenarios were implemented to ensure the APIs are reliable and handle errors correctly.
 
 ## Prerequisites
-Ensure the following tools and libraries are installed:
 
-- Java JDK (version 8 or later)
+Make sure the following tools and libraries are installed:
+
+- Java JDK (8 or later)
+
 - Gradle (for dependency management)
-- IntelliJ IDEA or any Java IDE of your choice
-- Postman (to inspect and test API requests)
+
+- IntelliJ IDEA or any preferred Java IDE
+
+- Postman (for initial API testing and inspection)
 
 ## What I Have Done
-**Step 1: Inspecting APIs Using Postman**
-Created a Postman collection for the following API endpoints:
+Step 1: Exploring APIs with Postman
+
+A dedicated Postman collection was created to test and understand the following endpoints:
 
 - User Management APIs
 
-  - Register a new user
-  - Login as admin
-  - Fetch the user list
-  - Search for a user by ID
-  - Edit user information (e.g., first name, phone number)
-  - Login as any user
+   - Register a new user
 
-- Item Management APIs
-  - Fetch the item list
-  - Add a new item
-  - Edit an item name
-  - Delete an item
+   - Login as admin
 
-**Step 2: Automation Using Rest Assured**
+   - Retrieve user list
 
-- Automated the above API requests with necessary assertions.
-- Handled positive cases to validate the functionality.
-- Added negative cases to verify error handling.
- 
-## How to Run the Tests
-**Step 1: Clone the Repository**
-Clone this project using: ```git clone <repository-url>```
+   - Search user by ID
 
-**Step 2: Open the Project**
-Open the project in IntelliJ IDEA or any Java IDE.
+Update user details (first name, phone number, etc.)
 
-**Step 3: Run the Tests**
-Execute the tests using TestNG:
-  - Command: `gradle clean test`
+Login as a regular user
 
-**Step 4: Analyze the Results**
-The test results will show detailed logs and validations for each API request and response.
+Item Management APIs
 
-## Postman Collection Documentation
+Get all item list
 
-https://documenter.getpostman.com/view/39820937/2sAYQcDpkp
+Add a new item
+
+Edit an item
+
+Delete an item
+
+Step 2: Automation Using Rest Assured
+
+Automated all the above API flows using Rest Assured.
+
+Added proper assertions to validate status codes, response bodies, and messages.
+
+Implemented positive test cases to confirm expected behavior.
+
+Included negative tests to verify proper error responses and validation handling.
+
+How to Run the Tests
+Step 1: Clone the Repository
+git clone <repository-url>
+
+Step 2: Open the Project
+
+Open the project in IntelliJ IDEA or any compatible Java IDE.
+
+Step 3: Execute Test Scripts
+
+Run the tests using TestNG through Gradle:
+
+gradle clean test
+
+Step 4: Review Test Results
+
+After the execution finishes, detailed test logs and results will be generated, showing validations for each API endpoint.
+
 
 ## Test Case
 
