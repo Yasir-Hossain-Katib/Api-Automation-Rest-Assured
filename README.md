@@ -24,7 +24,7 @@ Make sure the following tools and libraries are installed:
 - Postman (for initial API testing and inspection)
 
 ## What I Have Done
-Step 1: Exploring APIs with Postman
+** Step 1: Exploring APIs with Postman
 
 A dedicated Postman collection was created to test and understand the following endpoints:
 
@@ -38,31 +38,31 @@ A dedicated Postman collection was created to test and understand the following 
 
    - Search user by ID
 
-Update user details (first name, phone number, etc.)
+- Update user details (first name, phone number, etc.)
 
-Login as a regular user
+  - Login as a regular user
 
-Item Management APIs
+  - Item Management APIs
 
-Get all item list
+  - Get all item list
 
-Add a new item
+  - Add a new item
 
-Edit an item
+  - Edit an item
 
-Delete an item
+  - Delete an item
 
-Step 2: Automation Using Rest Assured
+** Step 2: Automation Using Rest Assured
 
-Automated all the above API flows using Rest Assured.
+ - Automated all the above API flows using Rest Assured.
 
-Added proper assertions to validate status codes, response bodies, and messages.
+ - Added proper assertions to validate status codes, response bodies, and messages.
 
-Implemented positive test cases to confirm expected behavior.
+ - Implemented positive test cases to confirm expected behavior.
 
-Included negative tests to verify proper error responses and validation handling.
+ - Included negative tests to verify proper error responses and validation handling.
 
-How to Run the Tests
+## How to Run the Tests
 Step 1: Clone the Repository
 git clone <repository-url>
 
